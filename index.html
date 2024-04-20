@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -7,13 +8,14 @@
     <link rel="icon" href="./icons/favicon.ico">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="app-container">
 
-        <section class="section-title">
-            <div class="section-title__text_wrapper">
-                <h1 class="section-title__title">Travel and Hospitality</h1>
-                <p class="section-title__about">
+        <section class="section hero">
+            <div class="section__header">
+                <h1 class="section__title hero__title">Travel and Hospitality</h1>
+                <p class="section__subtitle">
                     Offline & Online Translation: image translation, translation history,
                     file translation, bookmarks, dictionary meaning.
                 </p>
@@ -21,133 +23,202 @@
             <button class="button_large">Request a free trial</button>
         </section>
 
-        <section class="section-cards">
-            <div class="section-cards__text_wrapper">
-                <h2 class="half-title">Our language solution</h2>
-                <p class="half-title-about">
+        <section class="section solutions">
+            <div class="section__header solutions__header">
+                <h2 class="section__title">Our language solution</h2>
+                <p class="section__subtitle">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since
                 </p>
             </div>
-            <div class="cards_wrapper">
+
+            <div class="cards">
                 <div class="card">
-                    <div class="card__text_wrapper">
+                    <div class="card__header">
                         <h3 class="card__title">Translation</h3>
-                        <p class="card__about">Unlimited and secure translation for fixed price. Translate billions of characters per day</p>
+                        <p class="card__subtitle">
+                            Unlimited and secure translation for fixed price.
+                            Translate billions of characters per day
+                        </p>
                     </div>
-                    <img src="./icons/translation.svg" class="card__image" alt="graphic interpretation of translation">
+                    <img class="card__image" src="./icons/translation.svg" alt="graphic interpretation of translation">
                 </div>
                 <div class="card">
-                    <div class="card__text_wrapper">
+                    <div class="card__header">
                         <h3 class="card__title">Social listening</h3>
-                        <p class="card__about">Unlimited and secure translation for fixed price. Translate billions of characters per day</p>
+                        <p class="card__subtitle">
+                            Unlimited and secure translation for fixed price.
+                            Translate billions of characters per day
+                        </p>
                     </div>
-                    <img src="./icons/social_listening.svg" class="card__image" alt="voice recording track">
+                    <img class="card__image" src="./icons/social_listening.svg" alt="voice recording track">
                 </div>
                 <div class="card">
-                    <div class="card__text_wrapper">
+                    <div class="card__header">
                         <h3 class="card__title">Content generation</h3>
-                        <p class="card__about">Unlimited and secure translation for fixed price. Translate billions of characters per day</p>
+                        <p class="card__subtitle">
+                            Unlimited and secure translation for fixed price.
+                            Translate billions of characters per day
+                        </p>
                     </div>
-                    <img src="./icons/content_generation.svg" class="card__image" alt="bot that helps translate content">
+                    <img class="card__image" src="./icons/content_generation.svg"
+                        alt="bot that helps translate content">
                 </div>
             </div>
         </section>
 
-        <section class="section-product">
-            <div class="section-product__text_wrapper">
-                <h2 class="half-title">Who is this product for?</h2>
-                <p class="half-title-about">
+        <section class="section product">
+            <div class="section__header product__header">
+                <h2 class="section__title">Who is this product for?</h2>
+                <p class="section__subtitle">
                     Lingvanex Bot can simply solve a language barrier problem in your team, community, with your
                     international clients and outsourcing partners. It automatically identifies the languages in
                     a conversation and translates all messages of your team members into a chosen language.
                 </p>
             </div>
-            <div class="section-product__carousel">
-                <div class="carousel__buttons-block">
-                    <button class="button_small active">For travelers</button>
-                    <button class="button_small">For travel organization</button>
-                    <button class="button_small">For employees</button>
+            <div class="carousel">
+
+                <div class="carousel__controls">
+                    <label class="button_small" role="button">
+                        <input type="radio" name="carousel" value="1" hidden checked />
+                        For travelers
+                    </label>
+
+                    <label class="button_small" role="button">
+                        <input type="radio" name="carousel" value="2" hidden />
+                        For travel organization
+                    </label>
+
+                    <label class="button_small" role="button">
+                        <input type="radio" name="carousel" value="3" hidden />
+                        For employees
+                    </label>
                 </div>
-                <div class="carousel__slide">
-                    <div class="slide__text_wrapper">
-                        <h2 class="half-title">For travelers</h2>
-                        <ul class="slide__text-list">
-                            <li class="half-title-about">Highlight one word in the text on the page.</li>
-                            <li class="half-title-about">Word meaning, pronunciation, synonyms, hypernyms, hyponyms  . and more.</li>
-                            <li class="half-title-about">Highlight one word in the text on the page.</li>
-                            <li class="half-title-about">Word meaning, pronunciation, synonyms, hypernyms, hyponyms  . and more.</li>
-                        </ul>
+
+                <div class="carousel__slider">
+                    <div class="slide item">
+                        <div class="slide__description">
+                            <h2 class="slide__title">For travelers</h2>
+                            <ul class="list">
+                                <li class="list__item">
+                                    Highlight one word in the text on the page.
+                                </li>
+                                <li class="list__item">
+                                    Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more
+                                </li>
+                                <li class="list__item">
+                                    Highlight one word in the text on the page.
+                                </li>
+                                <li class="list__item">
+                                    Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="slide__image" src="./images/travelers.png" alt="couple with luggage">
                     </div>
-                    <img src="./images/travelers.png" class="slide__image" alt="couple with luggage">
-                </div>
-                <div class="carousel__slide">
-                    <div class="slide__text_wrapper">
-                        <h2 class="half-title">For travel organization</h2>
-                        <ul class="slide__text-list">
-                            <li class="half-title-about">Highlight one word in the text on the page.</li>
-                            <li class="half-title-about">Word meaning, pronunciation, synonyms, hypernyms, hyponyms  . and more.</li>
-                            <li class="half-title-about">Highlight one word in the text on the page.</li>
-                            <li class="half-title-about">Word meaning, pronunciation, synonyms, hypernyms, hyponyms  . and more.</li>
-                        </ul>
+
+                    <div class="slide item disabled">
+                        <div class="slide__description">
+                            <h2 class="slide__title">For travel organization</h2>
+                            <ul class="list">
+                                <li class="list__item">
+                                    Highlight one word in the text on the page.
+                                </li>
+                                <li class="list__item">
+                                    Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more
+                                </li>
+                                <li class="list__item">
+                                    Highlight one word in the text on the page.
+                                </li>
+                                <li class="list__item">
+                                    Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="slide__image" src="./images/organization.png" alt="couple with luggage">
                     </div>
-                    <img src="./images/organization.png" class="slide__image" alt="couple with luggage">
-                </div>
-                <div class="carousel__slide">
-                    <div class="slide__text_wrapper">
-                        <h2 class="half-title">For employees</h2>
-                        <ul class="slide__text-list">
-                            <li class="half-title-about">Highlight one word in the text on the page.</li>
-                            <li class="half-title-about">Word meaning, pronunciation, synonyms, hypernyms, hyponyms  . and more.</li>
-                            <li class="half-title-about">Highlight one word in the text on the page.</li>
-                            <li class="half-title-about">Word meaning, pronunciation, synonyms, hypernyms, hyponyms  . and more.</li>
-                        </ul>
+
+                    <div class="slide item disabled">
+                        <div class="slide__description">
+                            <h2 class="slide__title">For employees</h2>
+                            <ul class="list">
+                                <li class="list__item">
+                                    Highlight one word in the text on the page.
+                                </li>
+                                <li class="list__item">
+                                    Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more
+                                </li>
+                                <li class="list__item">
+                                    Highlight one word in the text on the page.
+                                </li>
+                                <li class="list__item">
+                                    Word meaning, pronunciation, synonyms, hypernyms, hyponyms and more.
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="slide__image" src="./images/employees.png" alt="couple with luggage">
                     </div>
-                    <img src="./images/employees.png" class="slide__image" alt="couple with luggage">
+
                 </div>
+                <button class="button_large product__call-to-action">Request a free trial</button>
             </div>
-            <button class="button_large">Request a free trial</button>
         </section>
 
-        <section class="section-features">
-            <h2 class="half-title">How can Lingvanex help you?</h2>
-            <div class="section-features__columns_wrapper">
-                <div class="columns__item">
-                    <img src="./icons/triangle_top.svg" alt="triangle">
-                    <h3 class="column__title">Book trips & tickets easily</h3>
-                    <p class="column__about">We provide cloud, sdk and on-premise translation solutions. All your private data stays with you.</p>
+        <div class="section-background">
+            <section class="section features">
+                <h2 class="section__title">How can Lingvanex help you?</h2>
+                <div class="features__cards">
+                    <div class="features__card">
+                        <img class="features__feature-image" src="./icons/triangle_top.svg" alt="triangle">
+                        <h3 class="features__feature-title">Book trips & tickets easily</h3>
+                        <p class="features__feature-description">
+                            We provide cloud, sdk and on-premise translation solutions.
+                            All your private data stays with you.
+                        </p>
+                    </div>
+                    <div class="features__card">
+                        <img class="features__feature-image" src="./icons/square.svg" alt="square">
+                        <h3 class="features__feature-title">Translate in real time</h3>
+                        <p class="features__feature-description">The price starts from $100 / month and depends on
+                            number of
+                            languages.</p>
+                    </div>
+                    <div class="features__card">
+                        <img class="features__feature-image" src="./icons/circle.svg" alt="circle">
+                        <h3 class="features__feature-title">Translate any hotel services</h3>
+                        <p class="features__feature-description">Every language model size is 70mb.SDK uses 200mb of RAM
+                            memory.</p>
+                    </div>
+                    <div class="features__card">
+                        <img class="features__feature-image" src="./icons/square.svg" alt="square">
+                        <h3 class="features__feature-title">Сommunicate easily</h3>
+                        <p class="features__feature-description">We provide cloud, sdk and on-premise translation
+                            solutions.
+                            All your
+                            private data stays with you.</p>
+                    </div>
+                    <div class="features__card">
+                        <img class="features__feature-image" src="./icons/triangle_bottom.svg"
+                            alt="triangle upside down">
+                        <h3 class="features__feature-title">Knowledge bases for employees</h3>
+                        <p class="features__feature-description">The price starts from $100 / month and depends on
+                            number of
+                            languages.</p>
+                    </div>
+                    <div class="features__card">
+                        <img class="features__feature-image" src="./icons/rhombus.svg" alt="rhombus">
+                        <h3 class="features__feature-title">Website & promo translation</h3>
+                        <p class="features__feature-description">SDK has trial project and manual.Dependency managers
+                            are
+                            supported.</p>
+                    </div>
                 </div>
-                <div class="columns__item">
-                    <img src="./icons/square.svg" alt="square">
-                    <h3 class="column__title">Translate in real time</h3>
-                    <p class="column__about">The price starts from $100 / month and depends on number of languages.</p>
-                </div>
-                <div class="columns__item">
-                    <img src="./icons/circle.svg" alt="circle">
-                    <h3 class="column__title">Translate any hotel services</h3>
-                    <p class="column__about">Every language model size is 70mb.SDK uses 200mb of RAM memory.</p>
-                </div>
-                <div class="columns__item">
-                    <img src="./icons/square.svg" alt="square">
-                    <h3 class="column__title">Сommunicate easily</h3>
-                    <p class="column__about">We provide cloud, sdk and on-premise translation solutions. All your private data stays with you.</p>
-                </div>
-                <div class="columns__item">
-                    <img src="./icons/triangle_bottom.svg" alt="triangle upside down">
-                    <h3 class="column__title">Knowledge bases for employees</h3>
-                    <p class="column__about">The price starts from $100 / month and depends on number of languages.</p>
-                </div>
-                <div class="columns__item">
-                    <img src="./icons/rhombus.svg" alt="rhombus">
-                    <h3 class="column__title">Website  & promo translation</h3>
-                    <p class="column__about">SDK has trial project and manual.Dependency managers are supported.</p>
-                </div>
-            </div>
-            <button class="button_large">Request a free trial</button>
-        </section>
-
+                <button class="button_large">Request a free trial</button>
+            </section>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

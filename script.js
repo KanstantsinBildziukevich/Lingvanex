@@ -1,10 +1,11 @@
-const buttons = document.querySelectorAll('.button_small');
+const radioButtons = document.querySelectorAll('input[type="radio"]');
 
-buttons[0].classList.add('active');
-
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+radioButtons.forEach(button => {
+    button.addEventListener('change', () => {
+        const value = button.value;
+        const slides = document.querySelectorAll('.item');
+        slides.forEach((slide, index) => {
+            slide.classList.toggle('disabled', index !== parseInt(value) - 1);
+        });
     });
 });
